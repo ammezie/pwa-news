@@ -25,19 +25,15 @@
 </template>
 
 <script>
-import axios from 'axios';
-
 export default {
-  asyncData() {
-    return axios
-      .get(
-        `https://newsapi.org/v2/top-headlines?country=us&apiKey=${
-          process.env.API_KEY
-        }`
-      )
-      .then(res => {
-        return { articles: res.data.articles };
-      });
+  async asyncData({ app }) {
+    const { articles } = await app.$axios.$get(
+      `https://newsapi.org/v2/top-headlines?country=us&apiKey=${
+        process.env.API_KEY
+      }`
+    );
+
+    return { articles };
   },
 };
 </script>

@@ -39,5 +39,5 @@ module.exports = {
       }
     }
   },
-  modules: ['@nuxtjs/dotenv']
+  modules: ['@nuxtjs/axios', '@nuxtjs/pwa', '@nuxtjs/dotenv']
 }
