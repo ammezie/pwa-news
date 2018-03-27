@@ -10,6 +10,10 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'A PWA news app' }
     ],
     link: [
+      {
+        rel: 'stylesheet',
+        href: 'https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css'
+      },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
@@ -34,5 +38,6 @@ module.exports = {
         })
       }
     }
-  }
+  },
+  modules: ['@nuxtjs/dotenv']
 }
