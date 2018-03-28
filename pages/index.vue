@@ -28,7 +28,7 @@
 export default {
   async asyncData({ app }) {
     const { articles } = await app.$axios.$get(
-      `https://newsapi.org/v2/top-headlines?country=us&apiKey=${
+      `https://newsapi.org/v2/top-headlines?country=ng&apiKey=${
         process.env.API_KEY
       }`
     );
