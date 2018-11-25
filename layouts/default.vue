@@ -4,9 +4,6 @@
       <div class="hero-body">
         <div class="container">
           <h1 class="title">PWA News</h1>
-          <h2 class="subtitle">
-            All the headlines making the wavy!
-          </h2>
         </div>
       </div>
     </section>
